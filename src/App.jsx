@@ -29,7 +29,7 @@ const handle = (e)=>{
   let store = [];
   if(searchVaule){
     countries.filter(x=>{
-      if(x.common.toLowerCase().includes(searchTerm.toLowerCase())){
+      if(x.common.toLowerCase().includes(searchVaule.toLowerCase())){
         store.push(x);
       }
     })
