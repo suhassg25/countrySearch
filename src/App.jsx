@@ -56,7 +56,7 @@ function Card( {countries, }) {
 
   return(<div style={{display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '20px'}}>  
     {countries.map((c)=>{
-      return(<div className="country-card" key={c.common} style={{border: '2px solid black', width:'150px', height: '130px', display:'flex', flexDirection:"column", justifyContent:"space-around", alignItems:"center"}}>
+      return(<div className="countryCard" key={c.common} style={{border: '2px solid black', width:'150px', height: '130px', display:'flex', flexDirection:"column", justifyContent:"space-around", alignItems:"center"}}>
         <img src={c.png} alt={c.common} style={{width:"70px", height:70}}/>
         <h2>{c.common}</h2>
         </div>)
